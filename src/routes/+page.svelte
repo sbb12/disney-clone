@@ -14,7 +14,27 @@
         
     </section>
 
-    <section class="">
+    <section class="px-[5vw] py-[10vw] text-center">
+        <h3 class="text-gray-50 text-3xl font-semibold mb-5 md:text-4xl">Watch the way you want</h3>
+        <p class="text-gray-300 text-base md:text-xl">Enjoy the world's greatest stories - anytime, anywhere</p>
+        <img src="/images/anytime_bg.webp" alt="Watch the Way you Want on a Variety of Devices shown here" class="mx-auto" loading="lazy">
+        <ul class="grid grid-cols-1 md:grid-cols-3">
+            <li>
+                <img src="/images/reel.webp" alt="video reel" loading="lazy" class="mx-auto w-full">
+                <h4 class="text-gray-50 font-semibold text-xl md:text-2xl lg:text-4xl m-4 md:mb-7">Endless entertainment</h4>
+                <p class="text-gray-300 text-lg md:text-xl mb-4">Explore thousands of hours of TV series, movies and originals.</p>
+            </li>
+            <li>
+                <img src="/images/multiple_devices.webp" alt="multiple devices" loading="lazy" class="mx-auto w-full">
+                <h4 class="text-gray-50 font-semibold text-xl md:text-2xl lg:text-4xl m-4 md:mb-7">Available on your favourite devices</h4>
+                <p class="text-gray-300 text-lg md:text-xl mb-4">Stream on up to four screens at once on compatible devices.</p>
+            </li>
+            <li>
+                <img src="/images/kids_icon.webp" alt="kids icon" loading="lazy" class="mx-auto w-full">
+                <h4 class="text-gray-50 font-semibold text-xl md:text-2xl lg:text-4xl m-4 md:mb-7">Easy-to-use parental controls</h4>
+                <p class="text-gray-300 text-lg md:text-xl mb-4">Keep your family safe with our intuitive parental controls.</p>
+            </li>
+        </ul>
 
     </section>
 
@@ -72,10 +92,10 @@
     </section>
 
     <section class="px-[5vw] py-[10vw]">
-        <h3 class="text-gray-50 text-3xl font-semibold text-center mb-5">Available on your favourite devices</h3>
+        <h3 class="text-gray-50 text-3xl font-semibold text-center mb-5 md:text-4xl">Available on your favourite devices</h3>
         <ul class="grid grid-cols-2 md:grid-cols-4 items-start">
             <li class="flex flex-col justify-center text-center">
-                <img src="/images/tv.webp" alt="tv" class="">
+                <img src="/images/tv.webp" alt="tv" class="" loading="lazy">
                 <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">TV</h3>
                 <ul class="text-gray-300">
                     <li>Amazon Fire Tv</li>
@@ -90,8 +110,8 @@
                 </ul>
             </li>
             <li class="flex flex-col justify-center text-center">
-                <img src="/images/laptop.webp" alt="laptop">
-                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">Computer</h3>
+                <img src="/images/laptop.webp" alt="laptop" loading="lazy">
+                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2 ">Computer</h3>
                 <ul class="text-gray-300">
                     <li>Chrome OS</li>
                     <li>MacOS</li>
@@ -99,7 +119,7 @@
                 </ul>
             </li>
             <li class="flex flex-col justify-center text-center">
-                <img src="/images/mobile.webp" alt="">
+                <img src="/images/mobile.webp" alt="" loading="lazy">
                 <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">Mobile & Tablet</h3>
                 <ul class="text-gray-300">
                     <li>Amazon Fire Tablets</li>
@@ -108,7 +128,7 @@
                 </ul>    
             </li >
             <li class="flex flex-col justify-center text-center">
-                <img src="/images/console.webp" alt="">
+                <img src="/images/console.webp" alt="" loading="lazy">
                 <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">Game Consoles</h3>
                 <ul class="text-gray-300">
                     <li>PS4</li>
