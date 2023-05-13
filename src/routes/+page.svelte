@@ -10,14 +10,24 @@
     </section>
 
 
-    <section class="">
-        
+    <section class="md:flex relative">
+        <div class="px-[5vw] w-full md:w-[40%] md:absolute md:text-left h-full text-center pb-10 flex flex-col justify-center">
+            <div class="">
+                <h3 class="text-gray-50 text-2xl font-semibold mb-5 sm:text-3xl lg:text-[40px]">Only on Disney+</h3>
+                <p class="text-gray-300 text-base md:text-lg lg:text-xl">Exclusive movies, series and originals you won't find on any other streaming service.</p>
+                <div class="md:mt-[30%]"></div>
+            </div>
+        </div>
+        <picture class="w-full">
+            <source media="(min-width: 768px)" srcset="/images/original_disney.webp" />
+            <img src="/images/original_disney_mobile.webp" alt="original disney content" class="w-full"/>
+          </picture>
     </section>
 
-    <section class="px-[5vw] py-[10vw] text-center">
-        <h3 class="text-gray-50 text-3xl font-semibold mb-5 md:text-4xl">Watch the way you want</h3>
+    <section class="px-[5vw] py-[10vh] text-center">
+        <h3 class="text-gray-50 text-3xl font-semibold mb-5 md:text-4xl lg:5xl">Watch the way you want</h3>
         <p class="text-gray-300 text-base md:text-xl">Enjoy the world's greatest stories - anytime, anywhere</p>
-        <img src="/images/anytime_bg.webp" alt="Watch the Way you Want on a Variety of Devices shown here" class="mx-auto" loading="lazy">
+        <img src="/images/anytime_bg.webp" alt="Watch the Way you Want on a Variety of Devices shown here" class="w-full" loading="lazy">
         <ul class="grid grid-cols-1 md:grid-cols-3">
             <li>
                 <img src="/images/reel.webp" alt="video reel" loading="lazy" class="mx-auto w-full">
@@ -38,8 +48,8 @@
 
     </section>
 
-    <section class="px-[5vw] py-[10vw]">
-        <h3 class="text-gray-50 text-3xl font-semibold text-center mb-5">Frequently Asked Questions</h3>
+    <section class="px-[5vw] py-[10vh]">
+        <h3 class="text-gray-50 text-3xl md:text-4xl lg:5xl font-semibold text-center mb-5">Frequently Asked Questions</h3>
         <Accordion title={'What is Disney+?'}>
             <p class="pb-4 md:pb-6">Disney+ is the streaming home for entertainment from Disney, Pixar, Marvel, Star Wars, National Geographic, Star and more.</p>
             <p class="pb-4 md:pb-6">Disney+ has a number of benefits included in the standard subscription price:</p>
@@ -91,12 +101,12 @@
 
     </section>
 
-    <section class="px-[5vw] py-[10vw]">
+    <section class="px-[5vw] py-[10vh] overflow-hidden">
         <h3 class="text-gray-50 text-3xl font-semibold text-center mb-5 md:text-4xl">Available on your favourite devices</h3>
         <ul class="grid grid-cols-2 md:grid-cols-4 items-start">
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/tv.webp" alt="tv" class="" loading="lazy">
-                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">TV</h3>
+                <h3 class="text-gray-50 text-xl sm:text-2xl lg:text-3xl my-3 font-semibold px-2">TV</h3>
                 <ul class="text-gray-300">
                     <li>Amazon Fire Tv</li>
                     <li>Android Tv devices</li>
@@ -111,7 +121,7 @@
             </li>
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/laptop.webp" alt="laptop" loading="lazy">
-                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2 ">Computer</h3>
+                <h3 class="text-gray-50 text-xl sm:text-2xl lg:text-3xl my-3 font-semibold px-2 ">Computer</h3>
                 <ul class="text-gray-300">
                     <li>Chrome OS</li>
                     <li>MacOS</li>
@@ -120,7 +130,7 @@
             </li>
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/mobile.webp" alt="" loading="lazy">
-                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">Mobile & Tablet</h3>
+                <h3 class="text-gray-50 text-xl sm:text-2xl lg:text-3xl my-3 font-semibold px-2">Mobile & Tablet</h3>
                 <ul class="text-gray-300">
                     <li>Amazon Fire Tablets</li>
                     <li>Android Phones & Tablets</li>
@@ -129,7 +139,7 @@
             </li >
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/console.webp" alt="" loading="lazy">
-                <h3 class="text-gray-50 text-3xl my-3 font-semibold px-2">Game Consoles</h3>
+                <h3 class="text-gray-50 text-xl sm:text-2xl lg:text-3xl my-3 font-semibold px-2">Game Consoles</h3>
                 <ul class="text-gray-300">
                     <li>PS4</li>
                     <li>PS5</li>
