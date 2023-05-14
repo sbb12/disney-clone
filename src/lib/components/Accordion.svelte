@@ -7,7 +7,7 @@
 </script>
 
 <div class="text-gray-50 text-base md:text-2xl px-4 md:px-6 bg-[#13151d] my-4">
-    <button class="inline-flex justify-between items-center w-full p-4 md:p-6 text-left" on:click={() => {open = !open}}> 
+    <button class="inline-flex items-center justify-between w-full p-4 text-left md:p-6" on:click={() => {open = !open}}> 
         <span>{title}</span>   
         <div class="pl-8 md:scale-150">
             {#if open}
@@ -22,15 +22,8 @@
         </div>
     </button>
     {#if open}
-        <div transition:slide class="text-gray-300 px-4 pb-4 md:px-6 md:pb-6">
+        <div transition:slide class="px-4 pb-4 text-gray-300 md:px-6 md:pb-6">
             <slot />
         </div>
     {/if}
 </div>
-
-
-<style>
-    p{
-        font-size: 15rem;
-    }
-</style>
