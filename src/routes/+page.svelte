@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Accordion from "../lib/components/Accordion.svelte";
+	import LandingNavbar from "../lib/components/LandingNavbar.svelte";
+    import Accordion from "../lib/components/Accordion.svelte";
 
     //signup form
     let email = "";
@@ -17,9 +18,11 @@
 
 <bg class="bg-[#040714] fixed h-screen top-0 transition-opacity w-full z-[-3]"></bg>
 <main>
+    <LandingNavbar />
+
     <!-- hero -->
-    <section class="relative pt-[50vw] pb-[20vw] md:pt-[40vw] px-[5vw] md:pb-[10vw] lg:p-[5.6vw] min-h-screen bg-no-repeat bg-[size:100%] bg-top w-screen lg:min-h-screen bg-[url('/images/hero_bg_sm.webp')] md:bg-[url('/images/hero_bg_md.webp')] lg:bg-[url('/images/hero_bg_lg.webp')]">
-        <div class="text-center max-w-[500px] md:max-w-[600px] lg:max-w-[50%] lg:text-left lg:w-[50%] lg:space-y-5 mx-auto lg:mx-0 lg:mr-auto">
+    <section class="relative lg:flex lg:items pt-[50vw] pb-[20vw] md:pt-[40vw] px-[5vw] md:pb-[10vw] lg:p-[5.6vw] min-h-screen bg-no-repeat lg:bg-cover bg-[size:100%] bg-top w-screen lg:min-h-screen bg-[url('/images/landing_bg_sm.webp')] md:bg-[url('/images/landing_bg_md.webp')] lg:bg-[url('/images/landing_bg_lg.webp')]">
+        <div class="text-center my-auto max-w-[500px] md:max-w-[600px] lg:max-w-[50%] lg:text-left lg:w-[50%] lg:space-y-5 mx-auto lg:mx-0 lg:mr-auto">
             <img src="/images/logo.svg" alt="disney plus logo" class="w-32 mx-auto lg:mx-0 md:w-40 lg:w-44" loading="lazy">
             <h1 class="font-semibold text-left text-gray-50 drop-shadow-lg shadow-black text-shadow-lg w-fit text-[26px] mb-7 md:text-[32px] lg:text-[40px] lg:leading-[54px] mx-auto lg:mx-0">+ More than you'd ever imagine</h1>
             <p class="mb-5 text-base text-gray-300 shadow-black text-shadow-lg md:text-lg lg:text-xl">Enter your email to create or restart your subscription</p>
@@ -46,7 +49,7 @@
     <section class="py-[5vh] md:py-0 md:flex relative overflow-hidden" id="exclusives">
         <div class="px-[5vw] w-full md:w-[40%] md:absolute md:text-left h-full text-center pb-10 flex flex-col justify-center">
             <div class="">
-                <h3 class="text-gray-50 font-semibold mb-5 text-2xl sm:text-3xl lg:text-[40px]">Only on Disney+</h3>
+                <h3 class="text-gray-50 font-semibold mb-5 text-2xl sm:text-3xl lg:text-[40px] md:w-fit md:mr-auto">Only on Disney+</h3>
                 <p class="text-base text-gray-300 md:text-lg lg:text-xl">Exclusive movies, series and originals you won't find on any other streaming service.</p>
                 <div class="md:mt-[30%]"></div>
             </div>
