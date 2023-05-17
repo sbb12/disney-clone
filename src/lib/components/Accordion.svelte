@@ -6,9 +6,9 @@
 
 </script>
 
-<div class="text-gray-50 text-base md:text-2xl px-4 md:px-6 bg-[#13151d] my-4">
+<div class="text-gray-50 text-base md:text-xl px-4 md:px-6 bg-[#13151d] my-4">
     <button class="inline-flex items-center justify-between w-full p-4 text-left md:p-6" on:click={() => {open = !open}}> 
-        <span>{title}</span>   
+        <span class="font-semibold">{title}</span>   
         <div class="pl-8 md:scale-150">
             {#if open}
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">

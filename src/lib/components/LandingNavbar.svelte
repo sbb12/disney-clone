@@ -14,7 +14,7 @@
         <bg class="absolute top-0 left-0 bg-[#040714] h-full w-full z-[-1]" transition:fade/>
     {/if}
 
-    <ul class="inline-flex items-center w-full space-x-2 pl-[5vw] pr-[3vw]">
+    <ul class="inline-flex items-center w-full space-x-2 lg:space-x-3 pl-[5vw] pr-[2vw]">
         {#if open}
             <li class="mr-auto"  transition:fade>
                 <a href="/">
@@ -38,8 +38,6 @@
         </li>
     </ul>
 </nav>
-
-
 
 
 <style lang="postcss">

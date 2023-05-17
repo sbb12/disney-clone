@@ -17,12 +17,12 @@
 </script>
 
 <bg class="bg-[#040714] fixed h-screen top-0 transition-opacity w-full z-[-3]"></bg>
-<main>
+<main class="">
     <LandingNavbar />
 
     <!-- hero -->
     <section class="relative lg:flex lg:items pt-[50vw] pb-[20vw] md:pt-[40vw] px-[5vw] md:pb-[10vw] lg:p-[5.6vw] min-h-screen bg-no-repeat lg:bg-cover bg-[size:100%] bg-top w-screen lg:min-h-screen bg-[url('/images/landing_bg_sm.webp')] md:bg-[url('/images/landing_bg_md.webp')] lg:bg-[url('/images/landing_bg_lg.webp')]">
-        <div class="text-center my-auto max-w-[500px] md:max-w-[600px] lg:max-w-[50%] lg:text-left lg:w-[50%] lg:space-y-5 mx-auto lg:mx-0 lg:mr-auto">
+        <div class="text-center my-auto max-w-[500px] md:max-w-[600px] lg:text-left lg:w-[50%] lg:space-y-5 mx-auto lg:mx-0 lg:mr-auto">
             <img src="/images/logo.svg" alt="disney plus logo" class="w-32 mx-auto lg:mx-0 md:w-40 lg:w-44" loading="lazy">
             <h1 class="font-semibold text-left text-gray-50 drop-shadow-lg shadow-black text-shadow-lg w-fit text-[26px] mb-7 md:text-[32px] lg:text-[40px] lg:leading-[54px] mx-auto lg:mx-0">+ More than you'd ever imagine</h1>
             <p class="mb-5 text-base text-gray-300 shadow-black text-shadow-lg md:text-lg lg:text-xl">Enter your email to create or restart your subscription</p>
@@ -36,7 +36,7 @@
                 </div>
                 <button class="bg-[#0063e5] text-gray-50 px-10 py-2 rounded-sm md:rounded-none md:rounded-r h-12 !m-0" on:click|preventDefault >CONTINUE</button>
             </form>
-            <p class="text-base text-gray-300 mb md:text-lg lg:text-xl">Get 12 months for the price of 10 when you sign up for an annual Disney+ subscription, compared to paying monthly.</p>
+            <p class="text-base text-gray-300 md:text-lg lg:text-xl">Get 12 months for the price of 10 when you sign up for an annual Disney+ subscription, compared to paying monthly.</p>
             <button class="absolute z-10 text-gray-300 bottom-8 lg:bottom-10 animate-bounce" on:click|preventDefault={()=>{scrollIntoView('exclusives')}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(209 213 219)" class="scale-150" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -64,7 +64,7 @@
     <section class="px-[5vw] py-[10vh] text-center overflow-hidden">
         <h3 class="text-gray-50  font-semibold mb-5 text-2xl md:text-3xl lg:text-[40px]">Watch the way you want</h3>
         <p class="text-base text-gray-300 md:text-xl">Enjoy the world's greatest stories - anytime, anywhere</p>
-        <img src="/images/anytime_bg.webp" alt="Watch the Way you Want on a Variety of Devices shown here" class="w-full" loading="lazy">
+        <img src="/images/anytime_bg.webp" alt="Watch the Way you Want on a Variety of Devices shown here" class="py-[5vw] lg:py-0 w-full" loading="lazy">
         <ul class="grid grid-cols-1 md:grid-cols-3">
             <li>
                 <img src="/images/reel.webp" alt="video reel" loading="lazy" class="w-full mx-auto">
@@ -145,7 +145,7 @@
         <ul class="grid items-start grid-cols-2 md:grid-cols-4">
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/tv.webp" alt="tv" loading="lazy">
-                <h3 class="px-2 text-xl md:text-2xl">TV</h3>
+                <h4 class="px-2 mb-5 text-xl font-semibold text-center lg:mb-6 text-gray-50 md:text-2xl lg:text-3xl">TV</h4>
                 <ul>
                     <li>Amazon Fire Tv</li>
                     <li>Android Tv devices</li>
@@ -160,7 +160,7 @@
             </li>
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/laptop.webp" alt="laptop" loading="lazy">
-                <h3 class="px-2">Computer</h3>
+                <h4 class="px-2 mb-5 text-xl font-semibold text-center lg:mb-6 text-gray-50 md:text-2xl lg:text-3xl">Computer</h4>
                 <ul>
                     <li>Chrome OS</li>
                     <li>MacOS</li>
@@ -169,7 +169,7 @@
             </li>
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/mobile.webp" alt="" loading="lazy">
-                <h3 class="px-2">Mobile & Tablet</h3>
+                <h4 class="px-2 mb-5 text-xl font-semibold text-center lg:mb-6 text-gray-50 md:text-2xl lg:text-3xl">Mobile & Tablet</h4>
                 <ul>
                     <li>Amazon Fire Tablets</li>
                     <li>Android Phones & Tablets</li>
@@ -178,7 +178,7 @@
             </li >
             <li class="flex flex-col justify-center text-center">
                 <img src="/images/console.webp" alt="" loading="lazy">
-                <h3 class="px-2">Game Consoles</h3>
+                <h4 class="px-2 mb-5 text-xl font-semibold text-center lg:mb-6 text-gray-50 md:text-2xl lg:text-3xl">Game Consoles</h4>
                 <ul>
                     <li>PS4</li>
                     <li>PS5</li>
@@ -193,10 +193,9 @@
 
 <style lang="postcss">
     h3{
-        @apply text-gray-50 font-semibold mb-5 text-center text-2xl sm:text-3xl lg:text-[40px]
+        @apply text-gray-50 font-semibold mb-5 text-center text-2xl sm:text-3xl lg:text-[40px] lg:py-4
     }
-    
     #available-device-section ul{
-       @apply text-gray-300
+        @apply text-gray-300;
     }
 </style>
