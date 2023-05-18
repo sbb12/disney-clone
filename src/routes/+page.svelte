@@ -1,12 +1,12 @@
 <script lang="ts">
-	import LandingNavbar from "../lib/components/LandingNavbar.svelte";
+    import LandingNavbar from "../lib/components/LandingNavbar.svelte";
     import Accordion from "../lib/components/Accordion.svelte";
 
     //signup form
     let email = "";
     let formError = '';
 
-    function scrollIntoView(id:string) {
+    function scrollIntoView(id:string): void {
         const el = document.getElementById(id);
         if (!el) return;
         el.scrollIntoView({
@@ -34,7 +34,10 @@
                         <p class="text-red-500">{formError}</p>
                     {/if}
                 </div>
-                <button class="bg-[#0063e5] text-gray-50 px-10 py-2 rounded-sm md:rounded-none md:rounded-r h-12 !m-0" on:click|preventDefault >CONTINUE</button>
+                <a href="/login">
+                    <button type="button" class="bg-[#0063e5] text-gray-50 px-10 py-2 rounded-sm md:rounded-none md:rounded-r h-12 !m-0">CONTINUE</button>
+                </a>
+                <!-- <button class="bg-[#0063e5] text-gray-50 px-10 py-2 rounded-sm md:rounded-none md:rounded-r h-12 !m-0" on:click|preventDefault={handleFormSubmit}>CONTINUE</button> -->
             </form>
             <p class="text-base text-gray-300 md:text-lg lg:text-xl">Get 12 months for the price of 10 when you sign up for an annual Disney+ subscription, compared to paying monthly.</p>
             <button class="absolute z-10 text-gray-300 bottom-8 lg:bottom-10 animate-bounce" on:click|preventDefault={()=>{scrollIntoView('exclusives')}}>
