@@ -1,6 +1,7 @@
-<bg class="bg-[#040714] fixed h-screen top-0 transition-opacity w-full z-[-3]"></bg>
+<bg class="bg-[#1a1d29] fixed h-screen top-0 transition-opacity w-full z-[-3]"></bg>
 
-<nav class="flex w-full pl-8 align-middle border-b border-gray-600 h-14 sm:h-20">
+
+<nav class="flex w-full pl-8 align-middle border-b border-gray-600 h-14 sm:h-20 bg-gradient-to-t from-transparent to-[#040714]">
     <img src="/images/logo.svg" alt="disney logo" class="w-16 md:w-20">
 </nav>
 

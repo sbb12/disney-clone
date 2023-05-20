@@ -1,5 +1,5 @@
 
-<footer class="flex flex-col justify-center text-gray-300 text-xs px-[5vw] text-center">
+<footer class="flex flex-col bg-[#040714] justify-center text-gray-300 text-xs px-[5vw] text-center">
     <img src="/images/logo.svg" alt="" loading="lazy" class="w-20 mx-auto my-4 sm:w-24 md:w-30 lg:w-36">
     <ul class="flex flex-wrap justify-center w-full max-w-[1000px] mx-auto">
         <li>
